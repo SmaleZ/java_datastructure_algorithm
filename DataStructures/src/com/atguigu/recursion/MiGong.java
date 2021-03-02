@@ -16,7 +16,7 @@ public class MiGong {
 
 		map[3][1] = 1;
 		map[3][2] = 1;
-
+   //
 	}
 
 	/**
