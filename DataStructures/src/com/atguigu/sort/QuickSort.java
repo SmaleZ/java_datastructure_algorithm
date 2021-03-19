@@ -7,24 +7,24 @@ import java.util.Date;
 public class QuickSort {
 	//冒泡排序的变种
 	public static void main(String[] args) {
-		int[] arr1 = {-9, 78, 0, 23, -567, 70};
+		int[] arr1 = {-9, -9, -9, -9, -9, -9};
 		int[] arr = new int[800000];
 		for (int i = 0; i < 800000; i++) {
 			arr[i] = (int) (Math.random() * 800000);
 		}
-		Date data1 = new Date();
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String date1str = simpleDateFormat.format(data1);
-		System.out.println("排序前的时间是：" + date1str);
+//		Date data1 = new Date();
+//		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//		String date1str = simpleDateFormat.format(data1);
+//		System.out.println("排序前的时间是：" + date1str);
 		
-		quickSort(arr, 0, arr.length-1);
+		quickSort(arr1, 0, arr1.length-1);
 		
-		Date data2 = new java.util.Date();
-		// SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd:mm:ss");
-		String date2str = simpleDateFormat.format(data2);
-		System.out.println("排序前的时间是：" + date2str);
-		
-		//System.out.println("arr=" + Arrays.toString(arr));
+//		Date data2 = new java.util.Date();
+//		// SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd:mm:ss");
+//		String date2str = simpleDateFormat.format(data2);
+//		System.out.println("排序前的时间是：" + date2str);
+//		
+		System.out.println("arr=" + Arrays.toString(arr1));
 	}
 	public static void quickSort(int[] arr, int left, int right) {
 		int l = left;
